@@ -1,0 +1,87 @@
+row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -8px; /* Margin lebih kecil */
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 8px; /* Padding lebih kecil */
+  }
+  
+  .container {
+    background-color: #f9f9f9; /* Warna background lebih terang */
+    padding: 10px 15px; /* Padding lebih kecil */
+    border: 1px solid #ddd; /* Border lebih kecil */
+    border-radius: 5px; /* Border lebih halus */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 15px; /* Spasi lebih kecil */
+    padding: 10px; /* Padding lebih kecil */
+    border: 1px solid #bbb; /* Border lebih lembut */
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 8px; /* Spasi lebih kecil */
+    display: block;
+    font-size: 14px; /* Font lebih kecil */
+  }
+  
+  .icon-container {
+    margin-bottom: 15px; /* Spasi lebih kecil */
+    padding: 5px 0;
+    font-size: 22px; /* Ukuran font sedikit lebih kecil */
+  }
+  
+  .btn {
+    background-color: #04AA6D; /* Hijau tombol */
+    color: white;
+    padding: 10px; /* Padding lebih kecil */
+    margin: 8px 0; /* Margin lebih kecil */
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px; /* Font lebih kecil */
+  }
+  
+  .btn:hover {
+    background-color: #45a049; /* Hijau lebih gelap */
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+    font-size: 14px; /* Font lebih kecil */
+  }
+  
+  /* Responsif - Ketika layar lebih kecil dari 800px, kolom akan ditumpuk vertikal */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 15px; /* Spasi lebih kecil */
+    }
+  }
